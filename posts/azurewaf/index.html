@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+    <title>Azurewaf</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="" />
+    <style>
+@import "https://fonts.googleapis.com/css2?family=Inconsolata&display=swap";html,body{width:100%;height:100%;overflow:auto;font-family:inconsolata,monospace;font-size:4vmin;line-height:4.1vmin;font-weight:400}body{margin:0;display:flex;flex-direction:row;justify-content:center;align-items:center}#content{min-width:82vmin;min-height:82vmin}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{border-radius:10px;box-shadow:inset 0 0 1px white}::-webkit-scrollbar-thumb{border-radius:10px;box-shadow:0 0 0 1px white}@media only screen and (min-width:768px){body{font-size:2.5vmin;line-height:2.6vmin}#content{min-width:60vmin}}body{align-items:unset;overflow-y:scroll}#content{max-width:80vmin}pre{overflow-x:scroll;white-space:pre}
+
+
+
+
+
+
+
+
+
+
+body{background:#002b36}body #terminal{color:#839496}body #user{color:#859900}body #dir{color:#268bd2}body .Typewriter__cursor{color:#839496}a{color:#839496}</style>
+
+</head><body><div id="content">
+    
+    
+
+    
+    
+    <div id=typewriter></div>
+    <script src="https://cdn.jsdelivr.net/gh/tameemsafi/typewriterjs/dist/core.js"></script>
+    <script type="text/javascript">
+        const instance = new Typewriter('#typewriter', {
+            strings: '\u003cspan id=terminal\u003e\u003ch1 id=\u0027title\u0027\u003eAzurewaf\u003c\/h1\u003e\u003ch1 id=\u0022azure-web-application-firewall\u0022\u003eAzure Web Application Firewall\u003c\/h1\u003e\n\u003ch2 id=\u0022brief-overview\u0022\u003eBrief Overview:\u003c\/h2\u003e\n\u003cp\u003eAzure Web Application Firewall (WAF) gives centralized assurance of your web applications from common misuses and vulnerabilities. Web applications are progressively focused on by malevolent assaults that misuse commonly known vulnerabilities. SQL injection and cross-site scripting are among the most common attacks.\u003c\/p\u003e\n\u003cp\u003eAzure WAF can be leveraged on several PaaS features in Azure such as:\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003eAzure Application Gateway\u003c\/li\u003e\n\u003cli\u003eAzure CDN\u003c\/li\u003e\n\u003cli\u003eAzure Front Door\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch2 id=\u0022azure-application-gateway\u0022\u003eAzure Application Gateway\u003c\/h2\u003e\n\u003ch3 id=\u0022brief-overview-1\u0022\u003eBrief Overview\u003c\/h3\u003e\n\u003cp\u003eUsing the Azure WAF features the Application Portal works as an application delivery controller (ADC). It offers Transport Layer Security (TLS), sticky sessions , round-robin load balancing, content-based directing, capacity to have different websites, and security enhancements.\u003c\/p\u003e\n\u003ch3 id=\u0022waf-modes\u0022\u003e\u003cstrong\u003eWAF modes\u003c\/strong\u003e\u003c\/h3\u003e\n\u003cp\u003eThe Application Gateway WAF can be configured to run in the following two modes:\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eDetection mode\u003c\/strong\u003e: Monitors and logs all threat alerts. You turn on logging diagnostics for Application Gateway in the \u003cstrong\u003eDiagnostics\u003c\/strong\u003e section. You must also make sure that the WAF log is selected and turned on. Web application firewall doesn\u0026rsquo;t block incoming requests when it\u0026rsquo;s operating in Detection mode.\u003c\/li\u003e\n\u003cli\u003e\u003cstrong\u003ePrevention mode\u003c\/strong\u003e: Blocks intrusions and attacks that the rules detect. The attacker receives a \u0026ldquo;403 unauthorized access\u0026rdquo; exception, and the connection is closed. Prevention mode records such attacks in the WAF logs.\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003cp\u003eMore Information:\u003c\/p\u003e\n\u003cp\u003e\u003ca href=\u0022https:\/\/github.com\/MicrosoftDocs\/azure-docs\/blob\/master\/articles\/web-application-firewall\/ag\/ag-overview.md\u0022\u003ehttps:\/\/github.com\/MicrosoftDocs\/azure-docs\/blob\/master\/articles\/web-application-firewall\/ag\/ag-overview.md\u003c\/a\u003e\u003c\/p\u003e\n\u003ch2 id=\u0022azure-web-application-firewall-on-azure-content-delivery-network-preview-mode\u0022\u003e\u003cstrong\u003eAzure Web Application Firewall on Azure Content Delivery Network (Preview Mode)\u003c\/strong\u003e\u003c\/h2\u003e\n\u003cp\u003eAzure Web Application Firewall (WAF) on Azure Content Delivery Network (CDN) from Microsoft provides centralized protection for your web content. WAF defends your web services against common exploits and vulnerabilities. It keeps your service highly available for your users and helps you meet compliance requirements.\u003c\/p\u003e\n\u003cp\u003eWAF on Azure CDN is a global and centralized solution. It\u0026rsquo;s deployed on Azure network edge locations around the globe. WAF stops malicious attacks close to the attack sources, before they reach your origin. You get global protection at scale without sacrificing performance.\u003c\/p\u003e\n\u003cp\u003eA WAF policy easily links to any CDN endpoint in your subscription. New rules can be deployed within minutes, so you can respond quickly to changing threat patterns.\u003c\/p\u003e\n\u003cp\u003e\u003cimg src=\u0022\/posts\/images\/Untitled%201.png\u0022 alt=\u0022\/posts\/images\/Untitled%201.png\u0022\u003e\u003c\/p\u003e\n\u003cp\u003eFor more info:\u003c\/p\u003e\n\u003cp\u003e\u003ca href=\u0022https:\/\/github.com\/MicrosoftDocs\/azure-docs\/blob\/master\/articles\/web-application-firewall\/cdn\/cdn-overview.md\u0022\u003eMicrosoftDocs\/azure-docs\u003c\/a\u003e\u003c\/p\u003e\n\u003ch2 id=\u0022azure-web-application-firewall-on-azure-front-door\u0022\u003e\u003cstrong\u003eAzure Web Application Firewall on Azure Front Door\u003c\/strong\u003e\u003c\/h2\u003e\n\u003cp\u003eAzure Web Application Firewall (WAF) on Azure Front Door provides centralized protection for your web applications. WAF defends your web services against common exploits and vulnerabilities. It keeps your service highly available for your users and helps you meet compliance requirements.\u003c\/p\u003e\n\u003cp\u003eWAF on Front Door is a global and centralized solution. It\u0026rsquo;s deployed on Azure network edge locations around the globe. WAF enabled web applications inspect every incoming request delivered by Front Door at the network edge.\u003c\/p\u003e\n\u003cp\u003eWAF prevents malicious attacks close to the attack sources, before they enter your virtual network. You get global protection at scale without sacrificing performance. A WAF policy easily links to any Front Door profile in your subscription. New rules can be deployed within minutes, so you can respond quickly to changing threat patterns.\u003c\/p\u003e\n\u003cp\u003e\u003cimg src=\u0022\/posts\/images\/Untitled%202.png\u0022 alt=\u0022\/posts\/images\/Untitled%202.png\u0022\u003e\u003c\/p\u003e\n\u003cp\u003eMore information can be found here:\u003c\/p\u003e\n\u003cp\u003e\u003ca href=\u0022https:\/\/github.com\/MicrosoftDocs\/azure-docs\/blob\/master\/articles\/web-application-firewall\/afds\/afds-overview.md\u0022\u003ehttps:\/\/github.com\/MicrosoftDocs\/azure-docs\/blob\/master\/articles\/web-application-firewall\/afds\/afds-overview.md\u003c\/a\u003e\u003c\/p\u003e\n\u003c\/span\u003e',
+            delay: '3',
+            autoStart: true,
+        });
+    </script>
+
+
+        </div></body>
+</html>
